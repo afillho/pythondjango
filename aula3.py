@@ -53,16 +53,72 @@ while n <= 10:
 print ("Soma : %d" %soma)
 """
 
+"""
+funcionarios = [
+        [1, "José", "00h00"],
+        [2, "José", "00h10"],
+        [3, "José", "00h30"],
+        [4, "José", "00h00"],
+        [5, "José", "01h00"],
+        [6, "José", "00h10"],
+        [7, "José", "01h00"],
+        [8, "José", "00h00"],
+        [9, "José", "01h00"],
+        [10, "José", "01h10"],
+        [11, "José", "00h00"],
+        [12, "José", "01h10"],
+        ]
 
-n = 0
-soma = 0
-while True:
-    x = int(input("Digite o número (0 para sair): "))      # Exemplo 6
-    if x == 0:
-        break
-    else:
-        n += 1
-    soma += x                                      # soma = soma + x
-print ("Média: %5.2f" % (soma/n))
+horarios = []
+x= 0
+h1=h2=h3=h4=h5=h6=h7=h8=h9=h10=h11=h12 = 0
+
+h = [h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12]
+
+for f in funcionarios:
+    if not f[2] in horarios:
+        horarios.append(f[2])
+    h[x] += 1
+    print(h)    
+        
+        
+horarios.sort()
+
+for x in horarios:
+    print(x, h)    
+"""
+ 
 
 
+t = [-10, -8, 0, 1, 2, 5, -2, -4]
+
+a = b = m = 0
+
+for x in t:
+    if x <= a:
+        a = x
+    elif x >= b:
+        b = x
+    m += x
+            
+    
+print("Mais baixa: %f Mais alta: %f Média: %f" % (a, b, m/len(t)))
+    
+    
+    
+"""
+for f in funcionarios:
+    if not f[2] in horarios:
+        horarios.append(f[2])
+    h[x] += 1
+    print(h)    
+        
+        
+horarios.sort()
+
+for x in horarios:
+    print(x, h) 
+"""
+        
+        
+ 
